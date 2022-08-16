@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>{{ title }}</title></head>
+
+
+<body>
+<h1> {{ title }} </h1>
+<button><a href = "../../create">Создать книгу</a></button>
+{% for i in queryset %}
+    <div>
+        <h2> <a href="/detail/{{i.id}}">{{ i.title }}</a> </h2>
+        <p> {{ i.author}} </p>
+        <p> {{ i.price}} p.</p>
+        <p> {{ i.publisher}} </p>
+    </div>
+{% endfor %}
+
+</body>
+</html>

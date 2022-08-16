@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <title>{{ instance.title }}</title>
+</head>
+
+<body>
+    <button><a href="../" style="text-decoration: none;">
+            <----------</a></button>
+    <h1> {{ instance.title }} </h1>
+    <div>
+        <p> <a href="../authorDetail/{{instance.author.id}}">{{ instance.author}}</a> </p>
+        <p> {{ status }} </p>
+        <p> {{ instance.sheets}} c.</p>
+        <p> {{ instance.price}} p.</p>
+        <p> <a href="../pubDetail/{{instance.publisher.id}}">{{ instance.publisher}}</a> </p>
+    </div>
+    <br />
+    <button><a href="../../update/{{instance.id}}">Change</a></button>
+</body>
+
+</html>
